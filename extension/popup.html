@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinterest Downloader</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">P</div>
+        <div>
+          <h2>Pin Collector</h2>
+          <span class="subtext">Wallpaper Downloader</span>
+        </div>
+      </div>
+      <span id="pinCountBadge" class="badge">0 pins</span>
+    </header>
+
+    <div class="controls">
+      <div class="scan-options">
+        <label for="scanDepthSelect">Scan target:</label>
+        <select id="scanDepthSelect">
+          <option value="current">Current Screen (~15 pins)</option>
+          <option value="50" selected>Deep Scan (~50 pins)</option>
+          <option value="100">Deep Scan (~100 pins)</option>
+          <option value="all">Full Board (Until Bottom)</option>
+        </select>
+      </div>
+
+      <div class="button-group">
+        <button id="scanBtn" class="btn btn-secondary">🚀 Start Scan & Collect</button>
+      </div>
+
+      <div class="folder-input-group">
+        <label for="subfolderInput">Save in Downloads subfolder:</label>
+        <input type="text" id="subfolderInput" value="dynamic_wallpaper" spellcheck="false" />
+      </div>
+
+      <button id="downloadBtn" class="btn btn-primary" disabled>
+        📦 Download All as 1 ZIP
+      </button>
+
+      <div id="progressContainer" class="progress-container hidden">
+        <div class="progress-bar-bg">
+          <div id="progressBar" class="progress-bar-fill"></div>
+        </div>
+        <span id="progressText" class="progress-text">Preparing...</span>
+      </div>
+    </div>
+
+    <div class="selection-bar">
+      <label class="checkbox-label">
+        <input type="checkbox" id="selectAllCheckbox" checked>
+        <span>Select All</span>
+      </label>
+      <span id="selectionSummary">0 selected</span>
+    </div>
+
+    <div id="gallery" class="gallery">
+      <div class="empty-state">
+        <p>No pins collected yet.</p>
+        <p class="hint">Select <b>Deep Scan (~50 pins)</b> and click <b>Start Scan & Collect</b>!</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="jszip.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

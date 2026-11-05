@@ -1,0 +1,16 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Windows shortcuts and temp files
+*.lnk
+update_shortcut.*
+*.tmp
+
+# Editor directories
+.vscode/
+.idea/
+
+# Generated output wallpaper (rebuilt dynamically)
+wallpaper.jpg
