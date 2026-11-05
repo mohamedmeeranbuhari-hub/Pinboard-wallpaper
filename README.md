@@ -1,6 +1,14 @@
 # 📌 PinBoard: Dynamic Storyboard & Moodboard Wallpaper
 
+[![100% Vibe Coded](https://img.shields.io/badge/100%25-Vibe%20Coded-ff69b4?style=for-the-badge&logo=sparkles)](https://github.com/mohamedmeeranbuhari-hub/Pinboard-wallpaper)
+[![Zero Battery Drain](https://img.shields.io/badge/Battery%20Drain-0%25-brightgreen?style=for-the-badge)](https://github.com/mohamedmeeranbuhari-hub/Pinboard-wallpaper)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
+
 > Transform your desktop into an evolving, organic vision board of your favorite Pinterest pins, memes, quotes, and artworks — with **0% continuous CPU or battery drain**.
+
+> [!NOTE]
+> 🛋️ **100% Vibe Coded (So You Don't Have To)**  
+> Yes, this entire repository — from the Manifest V3 browser extension that outsmarts Pinterest's virtualized DOM to the Windows Win32 ctypes API hooks and PIL drop-shadow compositing math — was **entirely vibe coded**. We spent the time prompting, debugging, and fine-tuning every single edge case so you don't have to write a single line of code. Just clone, drop your pins, and enjoy.
 
 ![PinBoard Desktop Preview](assets/desktop_preview.jpg)
 
@@ -65,8 +73,8 @@ Standard desktop wallpapers get boring quickly. Slideshows only show one photo a
 ### 2. Setup the Wallpaper Engine
 1. Clone this repository or download it to your preferred folder:
    ```bash
-   git clone <repo-url>
-   cd <repo-folder>
+   git clone https://github.com/mohamedmeeranbuhari-hub/Pinboard-wallpaper.git
+   cd Pinboard-wallpaper
    ```
 2. Install the required Python dependency:
    ```bash
